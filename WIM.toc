@@ -1,14 +1,23 @@
 ## Interface: 11200
-## Title: WIM — El Séquito del Terror Edition
-## Author: DarckRovert
-## Version: 9.4.0 [Comm-Tier]
-## Notes: Give whispers an instant messenger feel. Integrated within the Sequito ecosystem.
-## DefaultState: Enabled
-## OptionalDeps: Titan
-## SavedVariables: WIM_Data, WIM_Alias, WIM_Filters, WIM_History
+## Title: |cffffffffWIM |r|cff00ccff[Séquito del Terror Edition]|r
+## Version: 9.4.0 [Omni-Tier]
+## Notes: World Interactive Messaging. Gestión institucional de mensajería (v1.12.1).
+## Author: El Séquito del Terror (DarckRovert)
+## SavedVariables: WIM_Data, WIM_Cache, WIM_Settings, WIM_Filters, WIM_History, WIM_Stats
+## SavedVariablesPerCharacter: WIM_Config
+
+WIM.lua
 WIM.xml
-WIM_UrlCopy.xml
-WIM_Icon.xml
-WIM_Options.xml
-WIM_History.xml
-WIM_Titan.xml
+WIM_Icon.lua
+WIM_Menu.lua
+WIM_Options.lua
+WIM_History.lua
+WIM_Stats.lua
+WIM_Filters.lua
+WIM_Shortcuts.lua
+WIM_Tutorial.lua
+WIM_ChatLinks.lua
+WIM_Emoticon.lua
+WIM_Titan.lua
+WIM_FuBar.lua
+WIM_Minimap.lua
