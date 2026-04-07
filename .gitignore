@@ -1,0 +1,30 @@
+# WIM [Instant Messenger] — gitignore 🛠️💬
+
+# WoW Excluidos
+*.bak
+*.old
+*.tmp
+*.log
+
+# Workspace & OS
+.DS_Store
+Thumbs.db
+.vscode/
+
+# Media & Custom Sounds
+!Images/
+!Sounds/
+WIM_Icon_Custom.tga
+
+# Lua Binaries
+*.lua.compiled
+*.luac
+
+# Archivos de Desarrollo Local
+!README.md
+!CHANGELOG.md
+!LICENSE
+!CONTRIBUTING.md
+!CODE_OF_CONDUCT.md
+!SECURITY.md
+!wiki/
