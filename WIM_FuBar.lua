@@ -24,6 +24,6 @@ if (AceLibrary and AceLibrary:HasInstance("FuBarPlugin-2.0")) then
 			GameTooltip:AddLine("WIM [Comm-Tier]");
 			GameTooltip:AddLine(WIM_L_ICONTOOLTIP);
 		end
-	end);
+	});
 	end
 end

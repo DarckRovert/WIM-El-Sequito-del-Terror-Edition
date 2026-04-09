@@ -22,33 +22,10 @@ function WIM_Icon_Update()
 	end
 end
 
-function WIM_Icon_OnClick()
-	if(arg1 == "LeftButton") then
-		WIM_Icon_Menu_Toggle();
-	else
-		WIM_Options:Show();
-	end
-end
 
-function WIM_Icon_OnEnter()
-	if(WIM_Data.showToolTips) then
-		GameTooltip:SetOwner(this, "ANCHOR_LEFT");
-		GameTooltip:SetText("WIM [Comm-Tier]");
-		GameTooltip:AddLine(WIM_L_ICONTOOLTIP, 1, 1, 1);
-		if(WIM_NewMessageCount > 0) then
-			GameTooltip:AddLine("Messages: "..WIM_NewMessageCount, 0, 1, 0);
-		end
-		GameTooltip:Show();
-	end
-end
 
-function WIM_Icon_AddUser(user)
-	if(WIM_IconItems[user] == nil) then
-		WIM_IconItems[user] = true;
-		WIM_NewMessageCount = WIM_NewMessageCount + 1;
-		WIM_NewMessageFlag = true;
-	end
-end
+
+
 
 function WIM_Icon_RemoveUser(user)
 	if(WIM_IconItems[user]) then
@@ -58,5 +35,6 @@ function WIM_Icon_RemoveUser(user)
 			WIM_NewMessageCount = 0;
 			WIM_NewMessageFlag = false;
 		end
+		WIM_Icon_DropDown_Update();
 	end
 end

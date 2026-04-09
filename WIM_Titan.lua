@@ -57,9 +57,14 @@ function WIM_Titan_GetToolTipText()
 end
 
 function WIM_Titan_ToggleDropDown()
-	WIM_ConversationMenu:ClearAllPoints();
-	WIM_ConversationMenu:Show();
-	WIM_ConversationMenu:SetPoint("TOPLEFT", TitanPanelWIMButton, "BOTTOMLEFT");
+	if(WIM_ConversationMenu:IsVisible()) then
+		WIM_ConversationMenu:Hide();
+	else
+		WIM_ConversationMenu:ClearAllPoints();
+		WIM_ConversationMenu:SetPoint("TOPLEFT", TitanPanelWIMButton, "BOTTOMLEFT");
+		WIM_ConversationMenu:Show();
+		WIM_Icon_DropDown_Update();
+	end
 end
 
 

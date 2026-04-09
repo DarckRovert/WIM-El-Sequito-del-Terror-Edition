@@ -962,7 +962,6 @@ function WIM_Icon_AddUser(theUser)
 	info.value = WIM_Windows[theUser].frame
 	info.func = WIM_Icon_PlayerClick
 	WIM_IconItems[theUser] = info
-	table.sort(WIM_IconItems)
 	WIM_Icon_DropDown_Update()
 end
 
@@ -974,6 +973,18 @@ function WIM_Icon_PlayerClick()
 		WIM_Windows[user].newMSG = false
 		WIM_Windows[user].is_visible = true
 		WIM_Icon_DropDown_Update()
+	end
+end
+
+
+function WIM_Icon_ToggleDropDown()
+	if(WIM_ConversationMenu:IsVisible()) then
+		WIM_ConversationMenu:Hide();
+	else
+		WIM_ConversationMenu:ClearAllPoints();
+		WIM_ConversationMenu:SetPoint("BOTTOMRIGHT", WIM_IconFrame, "TOPLEFT", 10, -10);
+		WIM_ConversationMenu:Show();
+		WIM_Icon_DropDown_Update();
 	end
 end
 
