@@ -439,7 +439,7 @@
 						<Anchors>
 							<Anchor point="TOPLEFT" relativeTo="$parentButton1" relativePoint="BOTTOMLEFT">
 								<Offset>
-									<AbsDimension x="0" y="-2"/>
+									<AbsDimension x="0" y="-1"/>
 								</Offset>
 							</Anchor>
 						</Anchors>
@@ -448,7 +448,7 @@
 						<Anchors>
 							<Anchor point="TOPLEFT" relativeTo="$parentButton2" relativePoint="BOTTOMLEFT">
 								<Offset>
-									<AbsDimension x="0" y="-2"/>
+									<AbsDimension x="0" y="-1"/>
 								</Offset>
 							</Anchor>
 						</Anchors>
@@ -457,7 +457,7 @@
 						<Anchors>
 							<Anchor point="TOPLEFT" relativeTo="$parentButton3" relativePoint="BOTTOMLEFT">
 								<Offset>
-									<AbsDimension x="0" y="-2"/>
+									<AbsDimension x="0" y="-1"/>
 								</Offset>
 							</Anchor>
 						</Anchors>
@@ -466,7 +466,34 @@
 						<Anchors>
 							<Anchor point="TOPLEFT" relativeTo="$parentButton4" relativePoint="BOTTOMLEFT">
 								<Offset>
-									<AbsDimension x="0" y="-2"/>
+									<AbsDimension x="0" y="-1"/>
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</CheckButton>
+					<CheckButton name="$parentButton6" inherits="WIM_ShortcutButtonTemplate">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="$parentButton5" relativePoint="BOTTOMLEFT">
+								<Offset>
+									<AbsDimension x="0" y="-1"/>
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</CheckButton>
+					<CheckButton name="$parentButton7" inherits="WIM_ShortcutButtonTemplate">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="$parentButton6" relativePoint="BOTTOMLEFT">
+								<Offset>
+									<AbsDimension x="0" y="-1"/>
+								</Offset>
+							</Anchor>
+						</Anchors>
+					</CheckButton>
+					<CheckButton name="$parentButton8" inherits="WIM_ShortcutButtonTemplate">
+						<Anchors>
+							<Anchor point="TOPLEFT" relativeTo="$parentButton7" relativePoint="BOTTOMLEFT">
+								<Offset>
+									<AbsDimension x="0" y="-1"/>
 								</Offset>
 							</Anchor>
 						</Anchors>

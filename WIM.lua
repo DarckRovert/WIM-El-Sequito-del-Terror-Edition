@@ -1179,7 +1179,12 @@ function WIM_LoadShortcutFrame()
 			tooltip = WIM_L_TARGET
 		},
 		{
-			icon = "Interface\\Icons\\Spell_Holy_BlessingOfStrength",
+			icon = "Interface\\Icons\\INV_Misc_Spyglass_03",
+			cmd		= "who",
+			tooltip = WIM_L_WHO
+		},
+		{
+			icon = "Interface\\Icons\\INV_Misc_GroupNeedMore",
 			cmd		= "invite",
 			tooltip = WIM_L_INVITE
 		},
@@ -1189,17 +1194,27 @@ function WIM_LoadShortcutFrame()
 			tooltip = WIM_L_TRADE
 		},
 		{
-			icon = "Interface\\Icons\\INV_Helmet_44",
+			icon = "Interface\\Icons\\INV_Helmet_41",
 			cmd		= "inspect",
 			tooltip = WIM_L_INSPECT
+		},
+		{
+			icon = "Interface\\Icons\\INV_Misc_GroupLooking",
+			cmd		= "friend",
+			tooltip = WIM_L_ADDFRIEND
 		},
 		{
 			icon = "Interface\\Icons\\Ability_Physical_Taunt",
 			cmd		= "ignore",
 			tooltip = WIM_L_IGNORE
 		},
+		{
+			icon = "Interface\\Icons\\Spell_Holy_Purge",
+			cmd		= "clear",
+			tooltip = WIM_L_CLEAR
+		},
 	};
-	for i=1,5 do
+	for i=1,8 do
 		getglobal(this:GetName().."ShortcutFrameButton"..i.."Icon"):SetTexture(tButtons[i].icon);
 		getglobal(this:GetName().."ShortcutFrameButton"..i).cmd = tButtons[i].cmd;
 		getglobal(this:GetName().."ShortcutFrameButton"..i).tooltip = tButtons[i].tooltip;
@@ -1212,6 +1227,8 @@ function WIM_ShorcutButton_Clicked()
 	local theUser = this:GetParent():GetParent().theUser;
 	if(cmd == "target") then
 		TargetByName(theUser, true)
+	elseif(cmd == "who") then
+		SendWho('n-"'..theUser..'"');
 	elseif(cmd == "invite") then
 		InviteByName(theUser)
 	elseif(cmd == "trade") then
@@ -1220,8 +1237,12 @@ function WIM_ShorcutButton_Clicked()
 	elseif(cmd == "inspect") then
 		TargetByName(theUser, true)
 		InspectUnit("target")
+	elseif(cmd == "friend") then
+		AddFriend(theUser);
 	elseif(cmd == "ignore") then
 		getglobal(this:GetParent():GetParent():GetName().."IgnoreConfirm"):Show();
+	elseif(cmd == "clear") then
+		getglobal(this:GetParent():GetParent():GetName().."ScrollingMessageFrame"):Clear();
 	end
 end
 

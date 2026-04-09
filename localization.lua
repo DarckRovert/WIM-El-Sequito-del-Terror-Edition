@@ -159,6 +159,9 @@ WIM_L_TARGET="Target";
 WIM_L_XTOOLTIP="Shift &amp; Left-Click to end conversation.";
 WIM_L_HISTORYTOOLTIP="Click to view message history.";
 WIM_L_RUSUREYOUWANTIGNORE="Are you sure you want to\nignore this user?";
+WIM_L_WHO="Who";
+WIM_L_ADDFRIEND="Add Friend";
+WIM_L_CLEAR="Clear Window";
 --//CFM
 
 WIM_DESCRIPTION = [[
