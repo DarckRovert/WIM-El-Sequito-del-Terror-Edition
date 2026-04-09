@@ -1,9 +1,8 @@
 WIM_CHANGE_LOG = [[
-Version 1.3.3 (12-27-2017)|cffffffff
-[+] - refactoring by shirsig
-
-Version 1.3.2 (01-05-2017)|cffffffff
-[+] - translated into ruRU
+Version 1.3.2 [Comm-Tier] (04-09-2026)|cffffffff
+[+] - Restauración modular completa (Icon, Menu, Stats, Filters, etc).
+[*] - Sincronización de manifiesto .toc y optimización de carga.
+[*] - Estandarización Diamond-Tier bajo supervisión de DarckRovert.
 
 Version 1.3.1 (10-17-2006)|cffffffff
 [+] - Created new minimap icon menu. No longer using Blizzards Drop Down Menu.

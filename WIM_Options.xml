@@ -1,6 +1,5 @@
 <Ui xmlns="http://www.blizzard.com/wow/ui" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
 
-	<Script file="WIM_Options.lua"/>
 
 	<Frame name="WIM_Options_PanelTemplate" virtual="true">
         <Backdrop bgFile="Interface\Buttons\UI-SliderBar-Background" edgeFile="Interface\Buttons\UI-SliderBar-Border" tile="true">

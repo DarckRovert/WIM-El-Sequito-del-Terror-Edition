@@ -272,7 +272,7 @@ function WIM_Incoming(event)
 		WIM_SetWIM_Enabled(WIM_Data.enableWIM);
 		
 		if(WIM_VERSION ~= WIM_Data.versionLastLoaded) then
-			WIM_Help:Show();
+			if WIM_Help then WIM_Help:Show() end
 		end
 		WIM_Data.versionLastLoaded = WIM_VERSION;
 		
@@ -649,7 +649,7 @@ function WIM_PostMessage(user, msg, ttype, from, raw_msg, hotkeyFix)
 	end
 	WIM_UpdateScrollBars(chatBox)
 	WIM_Icon_DropDown_Update()
-	if WIM_HistoryFrame:IsVisible() then
+	if WIM_HistoryFrame and WIM_HistoryFrame:IsVisible() then
 		WIM_HistoryViewNameScrollBar_Update()
 		WIM_HistoryViewFiltersScrollBar_Update()
 	end
@@ -767,6 +767,7 @@ function WIM_Icon_Move(toDegree)
 end
 
 function WIM_Icon_UpdatePosition()
+	if(not WIM_IconFrame or not WIM_Data) then return; end
 	if(WIM_Data.showMiniMap == false) then
 		WIM_IconFrame:Hide();
 	else
@@ -868,9 +869,13 @@ function WIM_Icon_DropDown_Update()
 	
 	--Initialize Menu
 	for i=1,20 do 
-		getglobal("WIM_ConversationMenuTellButton"..i.."Close"):Show()
-		getglobal("WIM_ConversationMenuTellButton"..i):Enable()
-		getglobal("WIM_ConversationMenuTellButton"..i):Hide()
+		local btnClose = getglobal("WIM_ConversationMenuTellButton"..i.."Close")
+		local btn = getglobal("WIM_ConversationMenuTellButton"..i)
+		if btnClose then btnClose:Show() end
+		if btn then
+			btn:Enable()
+			btn:Hide()
+		end
 	end
 	
 	
@@ -892,17 +897,23 @@ function WIM_Icon_DropDown_Update()
 		end
 		WIM_NewMessageFlag = false
 		for i=1,table.getn(tList) do
-			if WIM_Windows[tList[i]].newMSG and WIM_Windows[tList[i]].is_visible == false then
-				WIM_IconItems[tList[i]].color = "|cff"..WIM_RGBtoHex(77/255, 135/233, 224/255)
-				WIM_NewMessageFlag = true
-				WIM_NewMessageCount = WIM_NewMessageCount + 1
-			else
-				WIM_IconItems[tList[i]].color = "|cffffffff"
+			local win = WIM_Windows[tList[i]]
+			local item = WIM_IconItems[tList[i]]
+			local btn = getglobal("WIM_ConversationMenuTellButton"..i)
+			
+			if win and item and btn then
+				if win.newMSG and win.is_visible == false then
+					item.color = "|cff"..WIM_RGBtoHex(77/255, 135/233, 224/255)
+					WIM_NewMessageFlag = true
+					WIM_NewMessageCount = WIM_NewMessageCount + 1
+				else
+					item.color = "|cffffffff"
+				end
+				btn:SetText(item.color..WIM_GetAlias(item.text, true))
+				btn.theUser = item.text
+				btn.value = item.value
+				btn:Show()
 			end
-			getglobal("WIM_ConversationMenuTellButton"..i):SetText(WIM_IconItems[tList[i]].color..WIM_GetAlias(WIM_IconItems[tList[i]].text, true))
-			getglobal("WIM_ConversationMenuTellButton"..i).theUser = WIM_IconItems[tList[i]].text
-			getglobal("WIM_ConversationMenuTellButton"..i).value = WIM_IconItems[tList[i]].value
-			getglobal("WIM_ConversationMenuTellButton"..i):Show()
 		end
 	end
 	
@@ -911,16 +922,18 @@ function WIM_Icon_DropDown_Update()
 	local CMH_Delta = 16 * (table.getn(tList)-1)
 	if CMH_Delta < 0 then CMH_Delta = 0 end
 	ConvoMenuHeight = ConvoMenuHeight + CMH_Delta
-	WIM_ConversationMenu:SetHeight(ConvoMenuHeight)
+	if WIM_ConversationMenu then
+		WIM_ConversationMenu:SetHeight(ConvoMenuHeight)
+	end
 	
 	--Minimap icon
-	if WIM_Data.enableWIM == true then
+	if WIM_Data.enableWIM == true and WIM_IconFrameButton then
 		if WIM_NewMessageFlag == true then
 			WIM_IconFrameButton:SetNormalTexture("Interface\\AddOns\\WIM\\Images\\miniEnabled")
 		else
 			WIM_IconFrameButton:SetNormalTexture("Interface\\AddOns\\WIM\\Images\\miniDisabled")
 		end
-	else
+	elseif WIM_IconFrameButton then
 		--show wim disabled icon
 		WIM_IconFrameButton:SetNormalTexture("Interface\\AddOns\\WIM\\Images\\miniOff")
 	end

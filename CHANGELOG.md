@@ -4,7 +4,17 @@ Todos los cambios notables en este proyecto serán documentados en este archivo 
 
 ---
 
-## [v9.4.0] — 2026-04-07 [Comm-Tier]
+## [v1.3.2] — 2026-04-09 [Comm-Tier]
+
+### 🛠️ Restoration & Structural Integrity (Diamond-Tier)
+- **Restauración Modular**: Recreación de 10 módulos lógicos (`WIM_Icon`, `WIM_Menu`, `WIM_Stats`, etc.) que faltaban en el repositorio.
+- **Sincronización de Manifiesto**: Reajuste completo del archivo `.toc` y limpieza de redundancias en `WIM.xml`.
+- **Estandarización de Versión**: Unificación global de la versión a **v1.3.2 [Comm-Tier]** eliminando numeraciones erráticas.
+- **Optimización de Carga**: Estructura de carga lineal para máxima compatibilidad con Turtle WoW.
+
+---
+
+## [v1.3.1] — 2026-04-07 [Comm-Tier]
 
 ### 💬 Communication & Neural Bridge (Mejoras)
 - **Neural Bridge Integration**: Soporte nativo para el **Traductor Universal v2.0**. Los susurros se traducen automáticamente en la ventana de WIM.
@@ -22,7 +32,7 @@ Todos los cambios notables en este proyecto serán documentados en este archivo 
 
 | Versión | Fecha | Nombre Clave | Estado | Resumen |
 | :--- | :--- | :--- | :---: | :--- |
-| **9.4.0** | 2026-04-07 | **Comm-Tier** | ✅ | Puente Neural de Traducción, v9.4.0. |
+| **1.3.1** | 2026-04-07 | **Comm-Tier** | ✅ | Puente Neural de Traducción, v1.3.1. |
 | **9.3.0** | 2026-03-25 | **Instant-WIM** | ⚠️ | Mejoras en el Parser de pestañas y sonidos. |
 | **9.2.0** | 2026-02-15 | **Stability** | ❌ | Versión inicial estable. |
 

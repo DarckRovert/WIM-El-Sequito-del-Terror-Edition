@@ -1,13 +1,20 @@
 ## Interface: 11200
-## Title: |cffffffffWIM |r|cff00ccff[Séquito del Terror Edition]|r
-## Version: 9.4.0 [Omni-Tier]
-## Notes: World Interactive Messaging. Gestión institucional de mensajería (v1.12.1).
+## Title: |cffffffffWIM |r|cff00ccff[Comm-Tier]|r
+## Version: 1.3.2 [Comm-Tier]
+## Notes: World Interactive Messaging. Gestión institucional de mensajería para el Séquito del Terror (v1.12.1).
 ## Author: El Séquito del Terror (DarckRovert)
 ## SavedVariables: WIM_Data, WIM_Cache, WIM_Settings, WIM_Filters, WIM_History, WIM_Stats
 ## SavedVariablesPerCharacter: WIM_Config
 
+localization.lua
 WIM.lua
 WIM.xml
+WIM_Icon.xml
+WIM_Options.xml
+WIM_History.xml
+WIM_Titan.xml
+WIM_UrlCopy.xml
+WIM_Hooks.lua
 WIM_Icon.lua
 WIM_Menu.lua
 WIM_Options.lua
@@ -21,3 +28,4 @@ WIM_Emoticon.lua
 WIM_Titan.lua
 WIM_FuBar.lua
 WIM_Minimap.lua
+WIM_ChangeLog.lua
