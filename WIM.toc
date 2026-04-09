@@ -8,12 +8,6 @@
 
 localization.lua
 WIM.lua
-WIM.xml
-WIM_Icon.xml
-WIM_Options.xml
-WIM_History.xml
-WIM_Titan.xml
-WIM_UrlCopy.xml
 WIM_Hooks.lua
 WIM_Icon.lua
 WIM_Menu.lua
@@ -26,6 +20,12 @@ WIM_Tutorial.lua
 WIM_ChatLinks.lua
 WIM_Emoticon.lua
 WIM_Titan.lua
-WIM_FuBar.lua
 WIM_Minimap.lua
 WIM_ChangeLog.lua
+WIM_FuBar.lua
+WIM.xml
+WIM_Icon.xml
+WIM_Options.xml
+WIM_History.xml
+WIM_Titan.xml
+WIM_UrlCopy.xml

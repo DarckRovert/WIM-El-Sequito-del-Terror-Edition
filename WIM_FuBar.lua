@@ -2,7 +2,9 @@
 -- FuBar/Broker Integration for WIM
 
 if (AceLibrary and AceLibrary:HasInstance("FuBarPlugin-2.0")) then
-	WIM_FuBar = AceLibrary("FuBarPlugin-2.0"):new({
+	local FuBarPlugin = AceLibrary("FuBarPlugin-2.0");
+	if(FuBarPlugin and FuBarPlugin.new) then
+		WIM_FuBar = FuBarPlugin:new({
 		name          = "WIM [Comm-Tier]",
 		description   = "World Interactive Messaging",
 		version       = "1.3.2",
@@ -22,5 +24,6 @@ if (AceLibrary and AceLibrary:HasInstance("FuBarPlugin-2.0")) then
 			GameTooltip:AddLine("WIM [Comm-Tier]");
 			GameTooltip:AddLine(WIM_L_ICONTOOLTIP);
 		end
-	});
+	end);
+	end
 end
