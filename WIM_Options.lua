@@ -371,7 +371,7 @@ function WIM_Options_PopCombatClicked()
 	end
 end
 
-function WIM_Options_CharacerInfoClicked()
+function WIM_Options_CharacterInfoClicked()
 	if(WIM_OptionsDisplayShowCharacterInfo:GetChecked()) then
 		WIM_Data.characterInfo.show = true;
 		WIM_OptionsDisplayShowCharacterInfoClassIcon:Enable();
@@ -383,7 +383,7 @@ function WIM_Options_CharacerInfoClicked()
 	end
 end
 
-function WIM_Options_CharacerInfoClassIconClicked()
+function WIM_Options_CharacterInfoClassIconClicked()
 	if(WIM_OptionsDisplayShowCharacterInfoClassIcon:GetChecked()) then
 		WIM_Data.characterInfo.classIcon = true;
 	else
@@ -391,7 +391,7 @@ function WIM_Options_CharacerInfoClassIconClicked()
 	end
 end
 
-function WIM_Options_CharacerInfoClassColorClicked()
+function WIM_Options_CharacterInfoClassColorClicked()
 	if(WIM_OptionsDisplayShowCharacterInfoClassColor:GetChecked()) then
 		WIM_Data.characterInfo.classColor = true;
 	else
@@ -399,7 +399,7 @@ function WIM_Options_CharacerInfoClassColorClicked()
 	end
 end
 
-function WIM_Options_CharacerInfoDetailsClicked()
+function WIM_Options_CharacterInfoDetailsClicked()
 	if(WIM_OptionsDisplayShowCharacterInfoDetails:GetChecked()) then
 		WIM_Data.characterInfo.details = true;
 	else

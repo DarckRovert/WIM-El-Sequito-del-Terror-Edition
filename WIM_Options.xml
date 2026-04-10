@@ -818,7 +818,7 @@
 								else
 									PlaySound("igMainMenuOptionCheckBoxOn");
 								end
-								WIM_Options_CharacerInfoClicked();
+								WIM_Options_CharacterInfoClicked();
 							</OnClick>
 							<OnEnter>
 								GameTooltip:SetOwner(this, "ANCHOR_RIGHT");
@@ -875,7 +875,7 @@
 								else
 									PlaySound("igMainMenuOptionCheckBoxOn");
 								end
-								WIM_Options_CharacerInfoClassIconClicked();
+								WIM_Options_CharacterInfoClassIconClicked();
 							</OnClick>
 							<OnEnter>
 								GameTooltip:SetOwner(this, "ANCHOR_RIGHT");
@@ -932,7 +932,7 @@
 								else
 									PlaySound("igMainMenuOptionCheckBoxOn");
 								end
-								WIM_Options_CharacerInfoClassColorClicked();
+								WIM_Options_CharacterInfoClassColorClicked();
 							</OnClick>
 							<OnEnter>
 								GameTooltip:SetOwner(this, "ANCHOR_RIGHT");
@@ -989,7 +989,7 @@
 								else
 									PlaySound("igMainMenuOptionCheckBoxOn");
 								end
-								WIM_Options_CharacerInfoDetailsClicked();
+								WIM_Options_CharacterInfoDetailsClicked();
 							</OnClick>
 							<OnEnter>
 								GameTooltip:SetOwner(this, "ANCHOR_RIGHT");

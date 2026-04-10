@@ -66,10 +66,10 @@
 			</OnLoad>
 			<OnClick>
 				this:SetChecked("0");
-				WIM_ShorcutButton_Clicked();
+				WIM_ShortcutButton_Clicked();
 			</OnClick>
 			<OnEnter>
-				if(WIM_Data.showToolTips == true) then
+				if(WIM_Data.showToolTips == true and this.tooltip) then
 					GameTooltip:SetOwner(this, "ANCHOR_RIGHT");
 					GameTooltip:SetText(this.tooltip);
 				end
