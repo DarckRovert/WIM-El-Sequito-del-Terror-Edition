@@ -563,6 +563,14 @@ function WIM_ChatFrameSupressor_OnEvent(event)
 end
 
 
+function WIM_UpdateCascadeStep()
+	WIM_CascadeStep = WIM_CascadeStep + 1;
+	if(WIM_CascadeStep > 10) then
+		WIM_CascadeStep = 0;
+	end
+end
+
+
 function WIM_PostMessage(user, msg, ttype, from, raw_msg, hotkeyFix)
 	--[[
 		ttype:
