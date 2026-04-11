@@ -4,6 +4,15 @@ Todos los cambios notables en este proyecto serán documentados en este archivo 
 
 ---
 
+## [v1.3.3] — 2026-04-10 [Comm-Tier]
+
+### 🛠️ Critical Fixes & Documentation (Diamond-Tier)
+- **Corrección de Cascade Error**: Implementación de `WIM_UpdateCascadeStep` para resolver el error `nil value` al abrir múltiples ventanas.
+- **Suite Documental Completa**: Generación de Wiki institucional (`API`, `FAQ`, `Manual`).
+- **Audit Compliance**: Verificación de integridad del núcleo mediante el puente local Gravity.
+
+---
+
 ## [v1.3.2] — 2026-04-09 [Comm-Tier]
 
 ### 🛠️ Restoration & Structural Integrity (Diamond-Tier)

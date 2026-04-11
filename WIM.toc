@@ -1,6 +1,6 @@
 ## Interface: 11200
 ## Title: |cffffffffWIM |r|cff00ccff[Comm-Tier]|r
-## Version: 1.3.2 [Comm-Tier]
+## Version: 1.3.3 [Comm-Tier]
 ## Notes: World Interactive Messaging. Gestión institucional de mensajería para el Séquito del Terror (v1.12.1).
 ## Author: El Séquito del Terror (DarckRovert)
 ## SavedVariables: WIM_Data, WIM_Cache, WIM_Settings, WIM_Filters, WIM_History, WIM_Stats

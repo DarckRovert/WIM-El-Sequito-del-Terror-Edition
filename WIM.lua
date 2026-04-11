@@ -1,4 +1,4 @@
-WIM_VERSION = "1.3.2";
+WIM_VERSION = "1.3.3";
 
 WIM_Windows = {};
 WIM_EditBoxInFocus = nil;
@@ -560,6 +560,13 @@ function WIM_ChatFrameSupressor_OnEvent(event)
 		return true;
 	end
 	return true;
+end
+
+
+function WIM_PlaySoundWisp()
+	if(WIM_Data.playSoundWisp) then
+		PlaySoundFile("Interface\\AddOns\\WIM\\Sounds\\wisp.wav");
+	end
 end
 
 

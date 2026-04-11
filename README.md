@@ -1,6 +1,6 @@
-# WIM — Instant Messenger (v1.3.2 [Comm-Tier]) 💬⚔️
+# WIM — Instant Messenger (v1.3.3 [Comm-Tier]) 💬⚔️
 
-![Version](https://img.shields.io/badge/version-v1.3.2--Comm--Tier-blue?style=for-the-badge)
+![Version](https://img.shields.io/badge/version-v1.3.3--Comm--Tier-blue?style=for-the-badge)
 ![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
 ![WoW](https://img.shields.io/badge/WoW-1.12.1--Turtle-orange?style=for-the-badge)
 
@@ -22,7 +22,7 @@ Más allá de organizar tus susurros en ventanas, esta edición está conectada 
 | **Apex Skins** | Visual Mod | Branding DarckRovert | Colores y bordes corporativos integrados |
 | **Url Copy** | Text Utility | Extracción de Enlaces | Copia URLs directamente desde las ventanas de chat |
 
-### ⚡ BENCHMARKS DE COMUNICACIÓN (v1.3.2)
+### ⚡ BENCHMARKS DE COMUNICACIÓN (v1.3.3)
 
 | Proceso | Latencia Séquito | Latencia Standard | Estado |
 | :--- | :---: | :---: | :---: |
@@ -37,9 +37,9 @@ Más allá de organizar tus susurros en ventanas, esta edición está conectada 
 Domina tus comunicaciones en nuestra base de conocimientos oficial:
 
 - 🏰 **[Arquitectura](file:///e:/Turtle%20Wow/Interface/AddOns/WIM/wiki/Arquitectura.md)**: Flujo de eventos y Throttling Engine.
-- ⚙️ **[Guía de API](file:///e:/Turtle%20Wow/Interface/AddOns/WIM/wiki/Guia_API.md)**: Puntos de entrada para desarrolladores.
+- ⚙️ **[Guía de API](file:///e:/Turtle%20Wow/Interface/AddOns/WIM/wiki/Gu%C3%ADa%20de%20API.md)**: Puntos de entrada para desarrolladores.
 - ❓ **[FAQ](file:///e:/Turtle%20Wow/Interface/AddOns/WIM/wiki/FAQ.md)**: Solución a errores comunes.
-- 📖 **[Manual de Usuario](file:///e:/Turtle%20Wow/Interface/AddOns/WIM/wiki/Manual_Usuario.md)**: Guía completa de uso.
+- 📖 **[Manual de Usuario](file:///e:/Turtle%20Wow/Interface/AddOns/WIM/wiki/Manual%20de%20Usuario.md)**: Guía completa de uso.
 
 ## 🚀 Despliegue Rápido (Comm-Flow)
 
