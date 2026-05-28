@@ -22,6 +22,13 @@ Más allá de organizar tus susurros en ventanas, esta edición está conectada 
 | **Apex Skins** | Visual Mod | Branding DarckRovert | Colores y bordes corporativos integrados |
 | **Url Copy** | Text Utility | Extracción de Enlaces | Copia URLs directamente desde las ventanas de chat |
 
+---
+
+## 🧠 WCS_Brain Integration [God-Tier]
+
+> [!IMPORTANT]
+> **Secretario Social (Auto-Respuesta):** WIM ahora sirve de interfaz sensorial para **[WCS_Brain (El Núcleo Neuronal)](https://github.com/DarckRovert/WCS_Brain-v9.3.1-God-Tier)**. Si recibes un susurro durante un combate crítico, tu mascota interceptará el mensaje y usará WIM para auto-responder a tu amigo y advertirle que estás ocupado.
+
 ### ⚡ BENCHMARKS DE COMUNICACIÓN (v1.3.3)
 
 | Proceso | Latencia Séquito | Latencia Standard | Estado |

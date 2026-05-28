@@ -4,6 +4,11 @@ Todos los cambios notables en este proyecto serán documentados en este archivo 
 
 ---
 
+## [v1.3.4] — 2026-05-28 [Comm-Tier]
+
+### 🧠 Neural AI Integration
+- **Integración WCS_Brain [God-Tier]**: WIM ahora expone su flujo de `CHAT_MSG_WHISPER` al motor neuronal de mascotas. Si tu salud es crítica, tu mascota interceptará los susurros y responderá automáticamente en tu defensa sin interrumpir tu combate.
+
 ## [v1.3.3] — 2026-04-10 [Comm-Tier]
 
 ### 🛠️ Critical Fixes & Documentation (Diamond-Tier)
